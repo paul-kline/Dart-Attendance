@@ -1,0 +1,25 @@
+<h1>New Class wizard</h1>
+<material-stepper legalJumps="backwards" orientation="horizontal" size="default">
+    <template step name="Step A Title" (continue)="validDelayedCheck($event)">
+        <div class="step-a">
+            <h1>Content A</h1>
+            (1s continue validation)
+        </div>
+    </template>
+    <template step name="Step B Title" (cancel)="validDelayedCheck($event)">
+        <div class="step-b">
+            <h1>Content B</h1>
+            (1s cancel validation time)
+        </div>
+    </template>
+    <template step name="Step C Title">
+        <div class="step-c">
+            <h1>Content C</h1>
+        </div>
+    </template>
+    <template step name="Step D Title">
+        <div class="step-d">
+            <h1>Content C</h1>
+        </div>
+    </template>
+</material-stepper>
